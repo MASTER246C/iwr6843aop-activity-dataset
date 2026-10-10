@@ -51,6 +51,7 @@ subject to their own terms; no rights to them are granted here.
 
 ## Documentation
 
+- [Phased collection and hosting roadmap](ROADMAP.md)
 - [Collection and quality plan](COLLECTION.md)
 - [Proposed record schema](SCHEMA.md)
 - [Dataset status and limitations](DATASET_CARD.md)
