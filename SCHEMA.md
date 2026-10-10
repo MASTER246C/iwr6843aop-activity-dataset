@@ -44,3 +44,20 @@ proposals and captured labels remain separately accessible.
 These fields do not imply a camera pipeline exists or authorize a video upload.
 Do not publish private reference values, participant identities, exact private
 locations, signed consent forms or unnecessary absolute timestamps.
+
+## Planned event annotations (separate axis)
+Keep state/activity labels and transition events separate; they are not mutually
+exclusive classes. Planned event types include sit_to_stand and motion_onset.
+Each event has event_id, recording_id, event_type, event_start_s, event_end_s,
+boundary_uncertainty_s, operational_definition_version, review_status,
+human_reviewer, review_time and decision_reason, with original/AI/human annotation
+history preserved as above. Point-like onset events may use equal boundaries,
+with explicit uncertainty rather than fabricated duration.
+
+Define sit-to-stand from the agreed departure-from-seated criterion through the
+agreed stable-standing criterion. Define motion onset as the first sustained
+change meeting a documented criterion after a stationary interval; a weight shift
+can qualify and does not establish walking. Exact thresholds and boundary rules
+must be chosen and validated before collection. Ambiguous, interrupted or
+unobservable events receive flags and uncertainty. No such events are collected
+or labeled in this scaffold.
