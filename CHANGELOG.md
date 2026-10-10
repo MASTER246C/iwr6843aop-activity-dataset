@@ -5,3 +5,4 @@
 - Planned sitting/standing/walking collection, quality review and held-out sessions.
 - Added proposed metadata/annotation schema and future camera/AI review roadmap.
 - Released zero capture files. Final dataset terms and attribution remain pending.
+- Planned sit-to-stand and motion-onset events on a separate annotation axis, with boundaries, operational definitions and uncertainty; no events collected.
