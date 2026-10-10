@@ -1,0 +1,13 @@
+# Default guard against accidental recordings/private records; review before release.
+private/
+captures/
+consent/
+*.bin
+*.cfg
+*.mp4
+*.mov
+*.avi
+*.wav
+*.csv
+*.jsonl
+.DS_Store
