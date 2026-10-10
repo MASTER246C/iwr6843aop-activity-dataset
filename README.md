@@ -67,3 +67,11 @@ before any public release. No camera or AI pipeline is implemented here.
 See [CONTRIBUTING.md](CONTRIBUTING.md) to volunteer through a GitHub issue.
 Accepted human-review contributions can receive opt-in GitHub credit; anonymous
 participation is also available. [Acknowledgments](ACKNOWLEDGMENTS.md).
+
+## Related repositories
+
+- [Radar Studio: visualizer and easy-to-run package](https://github.com/MASTER246C/radar-studio-chromebook)
+- [Activity Recorder: reusable collection component](https://github.com/MASTER246C/iwr6843aop-activity-recorder)
+- [This activity dataset](https://github.com/MASTER246C/iwr6843aop-activity-dataset)
+
+Recorder module publication is pending; this dataset still contains no captures.
