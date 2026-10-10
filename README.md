@@ -74,4 +74,4 @@ participation is also available. [Acknowledgments](ACKNOWLEDGMENTS.md).
 - [Activity Recorder: reusable collection component](https://github.com/MASTER246C/iwr6843aop-activity-recorder)
 - [This activity dataset](https://github.com/MASTER246C/iwr6843aop-activity-dataset)
 
-Recorder module publication is pending; this dataset still contains no captures.
+The recorder repository now contains experimental reusable modules and synthetic tests. This dataset still contains no captures; module tests do not establish real-world activity accuracy.
