@@ -13,6 +13,7 @@ UART from the IWR6843AOPEVM Rev G. Do not confuse UART packets/point clouds with
 raw ADC samples, firmware BIN files or synthetic demonstrations.
 
 ## Before a session
+- For original JSON firmware, first follow the [matching viewer's acceptance procedure](https://github.com/MASTER246C/radar-studio-chromebook/blob/main/QUICKSTART.md): verify control status, configure measured geometry and pair both ports without RF. Save the capture JSON and both raw JSONL lanes, then **stop here for review of the initial no-RF receipts**. Startup, configuration and pairing do not implicitly start RF. Only after review and separate authorization should a later manual 1–5 second sensing take be considered. These hardware checks do not authorize public release.
 - Record board revision, firmware identifier/hash, exact CFG hash, output protocol,
   baud rates, frame period and viewer/export version. Obtain TI files officially;
   vendor binaries/configuration contents are not included in this repository.

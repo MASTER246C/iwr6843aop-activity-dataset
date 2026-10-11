@@ -12,6 +12,8 @@ Recordings are handled in your browser and saved through explicit local download
 
 The hosted viewer is a software tool, not a released dataset or automatic submission service. This repository still has **0 released samples** and pending dataset terms. Original-firmware acceptance gates and physical-testing limits remain in force; follow the [viewer instructions](https://github.com/MASTER246C/radar-studio-chromebook/blob/main/ORIGINAL_RADAR.md) before any hardware work.
 
+For original firmware, the first acceptance procedure is no-RF control status, measured configuration and dual-port pairing with the exact matching firmware/viewer. Save the capture JSON and both raw JSONL lanes, then **stop here for review of the initial no-RF receipts**. Startup, configuration and pairing do not implicitly start RF. Only after that review should a later separately authorized manual **1–5 second** sensing take be considered; collecting one does not authorize dataset publication.
+
 
 **Mount height is configurable. Current user-reported reference: 4 feet (1.2192 m) from floor to the flat TOP of the bracket, excluding screws.**
 
