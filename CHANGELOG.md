@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-11 — Hosted Radar Studio launch
+
+- Linked the public hosted viewer for desktop/ChromeOS Chrome with Web Serial; local versioned downloads remain available.
+- Clarified matching firmware/configuration, browser-local recording/export and unchanged source-available/no-resale terms.
+- Hosting does not broaden hardware/demo compatibility, firmware acceptance or dataset-publication permission. Existing release tags, artifacts, licenses and notices are unchanged; release manifests continue to describe their frozen packages.
+
+
 ## 2026-10-10 — Mounting standard documentation
 
 - Selected the 2.00 m floor-to-flat-mount-TOP reference, excluding screws, with a final 15-degree downward tilt for the experimental activity setup.
