@@ -1,3 +1,5 @@
+> **First combined physical run, 2026-10-12:** [results and remaining checks](https://github.com/MASTER246C/iwr6843aop-activity-recorder/blob/main/docs/FIRST_COMBINED_RUN_2026-10-12.md). Firmware 0.3.2-rc1 with Radar Studio v0.9.0-preview.5 recorded 283 consecutive radar frames over 56.4 seconds, acknowledged manual Stop and returned to fault-free idle. The C920e recording passed file-integrity and video-decoding checks. The tested camera-label segment stayed unknown; timing alignment and radar training eligibility remain unresolved. No recordings or dataset samples were published.
+
 # IWR6843AOP Activity Dataset
 
 ## Hosted viewer
@@ -12,7 +14,7 @@ Recordings are handled in your browser and saved through explicit local download
 
 The hosted viewer is a software tool, not a released dataset or automatic submission service. This repository still has **0 released samples** and pending dataset terms. Original-firmware acceptance gates and physical-testing limits remain in force; follow the [viewer instructions](https://github.com/MASTER246C/radar-studio-chromebook/blob/main/ORIGINAL_RADAR.md) before any hardware work.
 
-For original firmware, the first acceptance procedure is no-RF control status, measured configuration and dual-port pairing with the exact matching firmware/viewer. Save the capture JSON and both raw JSONL lanes, then **stop here for review of the initial no-RF receipts**. Startup, configuration and pairing do not implicitly start RF. Only after that review should a later separately authorized manual **1–5 second** sensing take be considered; collecting one does not authorize dataset publication.
+For original firmware, the first acceptance procedure is no-RF control status, measured configuration and dual-port pairing with the exact matching firmware/viewer. Save the capture JSON and both raw JSONL lanes, then **stop here for review of the initial no-RF receipts**. Startup, configuration and pairing do not implicitly start RF. Only after that review should a separately initiated timed take or the exact 0.3.2-rc1 continuous workflow be considered; collecting either does not authorize dataset publication.
 
 
 **Mount height is configurable. Current user-reported reference: 4 feet (1.2192 m) from floor to the flat TOP of the bracket, excluding screws.**
@@ -80,10 +82,7 @@ subject to their own terms; no rights to them are granted here.
 - [Dataset status and limitations](DATASET_CARD.md)
 - [Release checklist](RELEASE_CHECKLIST.md)
 
-Future synchronized camera/radar capture and AI-assisted annotation are roadmap
-ideas only. Human review makes the final label decision; AI confidence is not
-ground truth. Videos require separate participant permission and privacy review
-before any public release. No camera or AI pipeline is implemented here.
+The linked viewer and recorder now provide local camera/radar capture and experimental pose-assisted review. The first combined run is documented above; measured synchronization, reviewed labels and training eligibility remain pending. Human review makes the final label decision; model output is not ground truth. Videos require separate permission and privacy review before public release. This dataset repository contains documentation, not recordings or model weights.
 
 ## Help validate future labels
 
