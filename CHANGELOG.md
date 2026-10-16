@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-16 — Mounting, schema and camera status
+
+- Supersedes the 2026-10-10 mounting entry below. The 2.00 m / 15-degree selection is historical. Mount height is configurable and must be measured; 4 ft (1.2192 m) to the flat top of the bracket is a historical project reference, not a default or calibration. README and COLLECTION.md now summarize and link Radar Studio's [MOUNTING.md](https://github.com/MASTER246C/radar-studio-chromebook/blob/main/MOUNTING.md) instead of repeating it.
+- SCHEMA.md links the real original-radar-dataset v1 JSON Schema and its field mapping in the recorder repository. Exports use integer microseconds. SCHEMA.md remains the planned release schema.
+- Camera tooling: Radar Studio v0.9.0-preview.4 and later include optional local camera recording and experimental pose-assisted review, and the recorder can convert a verified recording and review into a dataset file. Synchronization is human-matched, not independently verified; model output is never ground truth. These tools are not validated.
+- Add `tools/check_links.py` and CI that checks relative Markdown links on every push and pull request.
+- Still 0 released samples. Dataset terms remain pending.
+
 ## 2026-10-11 — Hosted Radar Studio launch
 
 - Linked the public hosted viewer for desktop/ChromeOS Chrome with Web Serial; local versioned downloads remain available.

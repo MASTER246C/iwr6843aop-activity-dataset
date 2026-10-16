@@ -13,7 +13,10 @@ modality linked by session IDs, firmware/configuration hashes, calibration,
 timestamps and optional synchronized video metadata. More raw data does not by
 itself establish better activity-classification accuracy.
 
-Camera synchronization and AI-assisted review are future work, subject to consent
-and human decisions. Choose suitable large-data hosting, access and versioned
-checksummed manifests before releasing recordings; GitHub is the documentation
-and provenance home, not a promise of unlimited dataset storage.
+Experimental local tools for camera recording, human-matched-event
+synchronization and pose-assisted review now exist in Radar Studio and the
+recorder. They are not validated, and 0 samples have been released. Their use
+remains subject to consent and human decisions; model output is never ground
+truth. Choose suitable large-data hosting, access and versioned checksummed
+manifests before releasing recordings; GitHub is the documentation and
+provenance home, not a promise of unlimited dataset storage.

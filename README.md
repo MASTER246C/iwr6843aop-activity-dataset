@@ -6,24 +6,14 @@
 
 **[Open Radar Studio](https://radar-studio.master246c.chatgpt.site)** · [Hosted help](https://radar-studio.master246c.chatgpt.site/help) · [Local offline ML](https://radar-studio.master246c.chatgpt.site/offline) · [Versioned viewer downloads](https://github.com/MASTER246C/radar-studio-chromebook/releases)
 
-Use a full tab in **Chrome on desktop or ChromeOS**, with Web Serial available and permitted by your browser/device administrator. USB access requires your explicit browser port selection. The hosted viewer does not need a Linux file server, Python, Node.js or Developer Mode.
-
-Use only the viewer workflow matching the firmware already on your IWR6843AOP board and its exact configuration. TI demos and the original JSON firmware are different protocols. Hosting does not flash firmware or establish compatibility with every demo or device.
-
-Recordings are handled in your browser and saved through explicit local downloads; opening the site does not submit recordings to GitHub or the dataset. Review consent and privacy before sharing any export. The software remains **source-available under its existing no-resale license**; required notices and separate third-party terms still apply.
+Browser, Web Serial, firmware-matching and software license requirements are in [Radar Studio's README](https://github.com/MASTER246C/radar-studio-chromebook#browser-and-privacy-requirements). Recordings are handled in your browser and saved only through explicit local downloads; opening the site does not submit recordings to GitHub or the dataset, so review consent and privacy before sharing any export.
 
 The hosted viewer is a software tool, not a released dataset or automatic submission service. This repository still has **0 released samples** and pending dataset terms. Original-firmware acceptance gates and physical-testing limits remain in force; follow the [viewer instructions](https://github.com/MASTER246C/radar-studio-chromebook/blob/main/ORIGINAL_RADAR.md) before any hardware work.
 
 For original firmware, the first acceptance procedure is no-RF control status, measured configuration and dual-port pairing with the exact matching firmware/viewer. Save the capture JSON and both raw JSONL lanes, then **stop here for review of the initial no-RF receipts**. Startup, configuration and pairing do not implicitly start RF. Only after that review should a separately initiated timed take or the exact 0.3.2-rc1 continuous workflow be considered; collecting either does not authorize dataset publication.
 
 
-**Mount height is configurable. Current user-reported reference: 4 feet (1.2192 m) from floor to the flat TOP of the bracket, excluding screws.**
-
-The chip center is above that reference in the photographed arrangement. Its signed vertical offset is **estimated at +0.003175 to +0.00635 m**, giving an **estimated antenna-height interval of 1.222375–1.22555 m**. The midpoint is about **1.224 m**; it is not a calibrated measurement. **Actual downward tilt is unconfirmed.** Measure the final geometry after setting the physical tilt, and preserve the uncertainty in capture metadata.
-
-**Antenna-center height = measured mount-top reference height + measured signed vertical chip-center offset after final tilt.** The mount reference is not the chip height. Do not guess the offset, replace it with zero, or apply an extra cosine to an already vertical offset. Verify point and track coordinate conventions separately before applying a transform; do not infer a firmware `sensorPosition` or claim calibrated angles from these estimates.
-
-The earlier **2.00 m / 15-degree** arrangement was a planned experimental reference and remains in historical examples and frozen releases. It is **not the current setup, a mandatory height, a universal optimum or a proven most-accurate setting**. Earlier underside-to-board-bottom measurements are not used for the chip-center offset. Physical calibration remains unverified.
+**Mount height is configurable.** Radar Studio pre-fills editable 1219 mm / 0° starting values that must be measured and confirmed before use; they are not a default calibration, and 4 ft (1.2192 m) to the flat top of the bracket is a historical project reference. See [MOUNTING.md](https://github.com/MASTER246C/radar-studio-chromebook/blob/main/MOUNTING.md) for antenna height, its uncertainty and the earlier 2.00 m / 15-degree arrangement.
 
 **JUST BEGINNING — 0 released samples. Planning scaffold only.**
 
@@ -34,8 +24,8 @@ benchmark, accuracy result or completed collection pipeline is supplied.
 
 ## Current status
 
-This repository currently contains planning and documentation only. No capture
-files or dataset have been released. Sample counts, capture specifications,
+This repository currently contains planning documentation and a Markdown link
+check only. No capture files or dataset have been released. Sample counts, capture specifications,
 quality checks, and download links will be added only when verified.
 
 ## Intended reuse policy

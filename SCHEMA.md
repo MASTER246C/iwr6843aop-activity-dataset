@@ -1,5 +1,13 @@
 # Proposed schema (not a released data format)
 
+> **Real v1 export format:** the `original-radar-dataset` version 1 file that Radar
+> Studio and the recorder's camera import produce now has a machine-readable
+> [JSON Schema](https://github.com/MASTER246C/iwr6843aop-activity-recorder/blob/main/schemas/original-radar-dataset.v1.schema.json).
+> That folder's [README.md](https://github.com/MASTER246C/iwr6843aop-activity-recorder/blob/main/schemas/README.md)
+> maps the fields below to export fields, or marks them not exported yet. Units
+> differ: exports give times as integer microseconds (`_us`), and other units
+> follow their field-name suffixes. This file remains the planned release schema.
+
 All fields below are design requirements pending a real capture/export audit.
 No example row represents an actual participant or recording. Use explicit null
 or unavailable reasons rather than invented measurements. Units and coordinate
@@ -41,7 +49,9 @@ proposals and captured labels remain separately accessible.
   calibration_method/version/residuals
 - video_consent_scope, privacy_review_status, public_video_release_approved
 
-These fields do not imply a camera pipeline exists or authorize a video upload.
+An experimental local camera recording and review pipeline now exists in Radar
+Studio and the recorder. It is not validated, and no video is released. These
+fields do not authorize a video upload.
 Do not publish private reference values, participant identities, exact private
 locations, signed consent forms or unnecessary absolute timestamps.
 
